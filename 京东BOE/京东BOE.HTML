@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./京东BOE.css">
+
+    <title>BOE官网-京东方官网</title>
+
+</head>
+
+<body>
+    <div class="box">
+        <div id="header">
+            <div class="center" id="hCenter">
+                <div class="hleft">
+                    <div id="logo">
+                        <a href="#"><img src="./images/logo.jpg"> </a>
+                    </div>
+                    <div class="hUl">
+                        <ul>
+                            <li id="chanping">
+                                <a href="#">产品与服务</a>
+                            </li>
+                            <li id="chuanxing">
+                                <a href="#">创新科技</a>
+                            </li>
+                            <li>
+                                <a href="#">新闻中心</a>
+                            </li>
+                            <li>
+                                <a href="#">BOE商城</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hright">
+                    <div class="hrTop">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">加入我们</a></li>
+                            <li><a href="#">多媒体中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="hrBottom">
+                        <input type="text" placeholder="请输入关键词">
+                        <button></button>
+                        <a href="#">
+                            English
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="column_in3" class="column_in">
+            <ul>
+                <li class="column_in_li"><a href="#">产品解决方案</a></li>
+            </ul>
+        </div>
+        <div id="column_in4" class="column_in">
+            <ul>
+                <li class="column_in_li"><a href="#">数字医院</a></li>
+                <li class="column_in_li"><a href="#">数字人体</a></li>
+                <li class="column_in_li"><a href="#">再生医学</a></li>
+                <li class="column_in_li"><a href="#">解决方案</a></li>
+            </ul>
+
+        </div>
+        <div id="column">
+            <ul id="cUl1">
+                <li id="cLi1" class="cli">
+                    <ul>
+                        <li class="cululi">
+                            <a href="#"></a>端口器件</a>
+                        </li>
+                        <li class="xianshi"><a href="#">显示与传感器件</a></li>
+                        <li><a href="#" class="chuangan">传感器及解决方案</a></li>
+                    </ul>
+                </li>
+                <li id="cLi2" class="cli">
+                    <ul>
+                        <li> <a href="#" class="cululi">智慧物联</a> </li>
+                        <li><a href="#">loT解决方案</a></li>
+                        <li><a href="#">智造服务</a></li>
+                        <li> <a href="#">数字艺术</a></li>
+                    </ul>
+                </li>
+                <li id="cLi3" class="cli">
+                    <ul>
+                        <li> <a href="#" class="cululi">智慧医工</a> </li>
+                        <li> <a href="#" class="jiankang">移动健康</a></li>
+                        <li> <a href="#" class="fuwu">健康服务</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="column_in1" class="column_in">
+            <ul>
+                <li v-for='item in list' class="column_in_li">{{item}}</li>
+                <!-- <li class="column_in_li"> <a href="#">TFT-LCD</a> </li>
+                <li class="column_in_li"><a href="#">AMOLED</a> </li>
+                <li class="column_in_li"><a href="#">微显示</a> </li>
+                <li class="column_in_li"><a href="#">传感器</a> </li> -->
+            </ul>
+        </div>
+        <div id="column_in2" class="column_in">
+            <ul>
+                <!-- <li class="column_in_li"><a href="#">医疗影像</a></li>
+                <li class="column_in_li"><a href="#">指纹识别</a></li>
+                <li class="column_in_li"><a href="#">生物监测</a></li>
+                <li class="column_in_li"><a href="#">智慧视窗</a></li> -->
+                <li v-for='item1 in list1' class="column_in_li">{{item1}}</li>
+
+            </ul>
+        </div>
+        <div id="column2" class="ccc">
+            <ul id="cul1">
+                <li id="cLi1" class="cli">
+                    <ul>
+                        <li class="cululi cululi2">
+                            <a href="#">BOE创新</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="cLi2" class="cli">
+                    <ul>
+                        <li class="cululi cululi2">
+                            <a href="#">科技创新</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="cLi3" class="cli">
+                    <ul>
+                        <li class="cululi ">
+                            <a href="#">创新平台</a>
+                        </li>
+                        <li>
+                            <a href="#">协同创新平台</a>
+                        </li>
+                        <li>
+                            <a href="#">创新空间</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="banner">
+            <ul id="img">
+                <li class="item active"><img src="./images/pic1.jpg" width="100%" height="450px"></li>
+                <li class="item"><img src="./images/pic2.jpg" width="100%" height="450px"></li>
+                <li class="item"><img src="./images/pic3.jpg" width="100%" height="450px"></li>
+            </ul>
+            <ul id="dot">
+                <li class="point active" data-index="0"></li>
+                <li class="point" data-index='1'></li>
+                <li class="point" data-index='2'></li>
+            </ul>
+        </div>
+        <div id="service">
+            <div class="sTitle">
+                <h3>产品与服务</h3>
+            </div>
+            <div class="sContent">
+                <div class=" sc" id="scLeft">
+                    <a href="#"><img src="./images/img1.jpeg" width=350px; height=240px; alt="" id="yishang1">
+                        <p>端口器件</p>
+                    </a>
+                </div>
+                <div class=" sc" id="scCenter">
+                    <a href="#"><img src="./images/img8.jpeg" width=350px; height=240px; alt="" id="yishang2">
+                        <p>智能物联</p>
+                    </a>
+                </div>
+                <div class=" sc" id="scRinght">
+                    <a href="#"> <img src="./images/img3.jpeg" width=350px; height=240px; alt="" id="yishang3">
+                        <p>智能医工</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="cTitle">
+                <h3><a href="#">创新科技</a></h3>
+            </div>
+            <div class="cContent">
+                <a href="#"><img src="./images/img6.jpeg" width="970px" height="340px" alt=""></a>
+            </div>
+        </div>
+        <div id="news">
+            <div class="nTitle">
+                <h3>热点新闻</h3>
+            </div>
+            <div class="nContent">
+                <div id="ncLeft" class="nc"><img src="./images/img8.jpg" width="100%" height="300px" alt="">
+                    <P>BOE（京东方）智慧显示 BOE（京东方）智慧显示系统解决方案 惊艳亮相中华人民共和国成立70周年庆祝活动</P>
+                    <a href="#">阅读全文></a>
+                </div>
+                <div id="ncCentent" class="nc"><img src="./images/img2.png" width="100%" height="300px" alt="">
+                    <P>BOE（京东方）推百万级对比度BD Cell显示技术</P><a href="#">阅读全文></a>
+                </div>
+                <div id="ncRinght" class="nc"><img src="./images/img10.jpg" width="100%" height="300px" alt="">
+                    <p>直击SID 2019：BOE（京东方）创新显示技术带你感受前沿科技魅力</p>
+                    <a href="#">阅读全文></a></div>
+            </div>
+            <div id="wixin1" class="w">
+                <img src="./images/weixinCode.png" width="80px" height="80px" alt="">
+            </div>
+            <div id="wibo1" class="w">
+                <img src="./images/weiboCode.png" width="80px" height="80px" alt="">
+            </div>
+            <div id="in1" class="w">
+                <img src="./images/yleym.png" width="80px" height="80px" alt="">
+            </div>
+        </div>
+        <div id="winxin">
+            <div class="winxin_in">
+                <p>在社交媒体上关注我们 :</p>
+                <span>
+                    <a href="#" id="weixin2"><img src="./images/weixin-icon02.png" alt="" id="winxin3"></a>
+                    <a href="#" id="weibo2"><img src="./images/weibo-icon02.png" alt="" id="wibo3"></a>
+                    <a href="#" id="in2"><img src="./images/yl2.png" alt="" id="in3"></a>
+                </span>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="fContent">
+                <div class="row">
+                    <div class="rLeft">
+                        <ul class="ul1">
+                            <li class="li1">
+                                <ul class="ul2">
+                                    <li><a href="#">端口器件</a></li>
+                                    <li><a href="#">智慧物联</a></li>
+                                    <li><a href="#">智慧医工</a></li>
+                                </ul>
+                            </li>
+                            <li class="li1">
+                                <ul class="ul2">
+                                    <li><a href="#">BOE创新</a></li>
+                                    <li><a href="#">科技知乎</a></li>
+                                    <li><a href="#">协同创新平台</a></li>
+                                    <li><a href="#">创想空间</a></li>
+                                </ul>
+                            </li>
+                            <li class="li1">
+                                <ul class="ul2">
+                                    <li><a href="#" id="">关于BOE</a></li>
+                                    <li><a href="#">投资者关系</a></li>
+                                    <li><a href="#">企业社会责任</a></li>
+                                </ul>
+                            </li>
+                            <li class="li1">
+                                <ul class="ul2">
+                                    <li><a href="#">新闻中心</a></li>
+                                    <li><a href="#">BOE说</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rRinght">
+                        <ul id="rrul">
+                            <li class="rrli " id="a">
+                                <img src="./images/qrcode2.png" width="100px" height="100px  alt=" ">
+                                <p>BOE画屏App</p>
+                            </li>
+                            <li class="rrli "><img src="./images/qrcode3.png " height="100px " width="100px " alt=" ">
+                                <p>BOE移动健康App</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom ">
+                    <ul>
+                        <li><p><a href="# ">网站地图</a>&nbsp;|&nbsp;<a href="# "> 隐私条款</a>&nbsp; |&nbsp; <a href="# ">除名查询</a> &nbsp;|&nbsp;<a href=" "> 快速链接</a></p></li>
+                        <li class="b "><p><a href="# ">Copyright©2020京东方科技集团股份有限公司 版权所有</a></p></li>
+                        <li><p>京ICP备12041691号-2.<a href="# ">京公网安备11010502026582</a><br>
+                            <a href="# ">互联网药品信息服务资格证书 （京）-非经营性-2017-0039</a>
+                            </p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="aaa ">
+        <div class="a_1 aa " onclick="return pageScroll() "></div>
+        <div class="a_2 aa " ></div>
+        <div class="a_3 aa "></div>
+
+
+    </div>
+</div>
+    <script src="jquery-3.5.1.js "></script>
+    <script type="text/javascript " src="./京东BOE.js "></script>
+    <script type="text/javascript " src="./京东BOE1.js "></script>
+    <script src="./vue.min.js "></script>
+    <script  type="text/javascript "  src="./京东BOE3.js "></script>
+</body>
+
+</html>
