@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+.box {
+    width: 1518px;
+    height: 1300px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+#header {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+#hCenter {
+    width: 97%;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* 头部的左边 */
+
+.hleft {
+    width: 50%;
+    height: 90px;
+    position: absolute;
+    left: 5%;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.hUl {
+    width: 400px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 240px;
+}
+
+.hUl li {
+    float: left;
+    margin-left: 25px;
+    font-size: 16px;
+    width: auto;
+    height: 500%;
+}
+
+.hUl a {
+    text-decoration: none;
+    color: black;
+}
+
+.hUl a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 35px;
+}
+
+
+/* 头部右边 */
+
+#hright {
+    width: 40%;
+    height: 90px;
+    position: absolute;
+    right: 5%;
+    overflow: hidden;
+}
+
+
+/* 上部 */
+
+.hrTop {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+}
+
+.hrTop li {
+    float: left;
+    margin-left: 45px;
+}
+
+.hrTop a {
+    text-decoration: none;
+    color: black;
+}
+
+.hrTop a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* 下部 */
+
+.hrBottom {
+    width: 450px;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    right: 110px;
+}
+
+
+/* 搜索框 */
+
+.hrBottom input {
+    height: 20px;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid rgb(201, 199, 199);
+}
+
+
+/* 搜索按钮 */
+
+.hrBottom button {
+    background: url(./images/search.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 210px;
+    cursor: pointer;
+}
+
+.hrBottom a {
+    margin-left: 170px;
+    text-decoration: none;
+    color: black;
+}
+
+.hrBottom a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* column */
+
+#column,
+#column2 {
+    width: 1518px;
+    height: 250px;
+    background-color: rgb(204, 201, 201);
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.cli {
+    float: left;
+    margin-left: 300PX;
+}
+
+.cululi {
+    font-size: 16pt;
+    font-weight: 800;
+    border-bottom: 3px solid rgb(138, 135, 135);
+    width: 150px;
+    cursor: pointer;
+}
+
+#cLi1 a,
+#cLi2 a,
+#cLi3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#cLi1 a:hover,
+#cLi2 a:hover,
+#cLi2 a:hover {
+    font-weight: bold;
+}
+
+#cLi1 li,
+#cLi2 li,
+#cLi3 li {
+    margin-top: 30px;
+}
+
+.cululi2 {
+    border: none;
+}
+
+.column_in {
+    width: 100px;
+    height: 130px;
+    background-color: rgb(204, 201, 201);
+    z-index: 200;
+    position: absolute;
+    border-left: 1px solid black;
+    display: none;
+    margin-left: 5px;
+}
+
+#column_in1 {
+    left: 33%;
+    top: 155px;
+}
+
+#column_in2 {
+    left: 33%;
+    top: 180px;
+}
+
+#column_in3 {
+    right: 20%;
+    top: 155px;
+}
+
+#column_in4 {
+    right: 20%;
+    top: 175px;
+}
+
+.column_in_li {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.column_in_li a {
+    text-decoration: none;
+    color: black;
+}
+
+.column_in_li a:hover {
+    font-weight: 600;
+}
+
+
+/* banner */
+
+#banner {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* 图片 */
+
+.item {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+#img li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* 点 */
+
+#dot {
+    padding-left: 0px;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95%;
+}
+
+.point {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    float: left;
+    margin-right: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.point.active {
+    background: white;
+}
+
+
+/* service */
+
+#service {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+
+/* service标题 */
+
+.sTitle,
+.cTitle,
+.nTitle {
+    width: 940px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.sTitle h3,
+.cTitle h3,
+.nTitle h3 {
+    line-height: 27px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Microsoft YaHei";
+    cursor: auto;
+}
+
+
+/* service内容 */
+
+.sContent {
+    width: 100%;
+    height: 400px;
+}
+
+.sc,
+.nc {
+    width: 350px;
+    height: 270px;
+    float: left;
+    margin: 0px 10px;
+}
+
+.sc p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sc a {
+    color: black;
+    text-decoration: none;
+}
+
+#scLeft {
+    margin-left: 220px;
+}
+
+
+/* content */
+
+#content {
+    box-shadow: 0 -2px 10px #E6E6E6;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.cTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.cTitle a:hover {
+    text-decoration: underline;
+}
+
+#content .cContent {
+    width: 970px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+.nc {
+    width: 400px;
+    height: 400px;
+    background: #f1f1f1;
+}
+
+.nc p {
+    margin: 0 0 10px;
+    font-size: 15px;
+    word-break: break-all
+}
+
+
+/* new */
+
+#news {
+    width: 100%;
+    height: 500px;
+}
+
+#ncLeft {
+    margin-left: 140px;
+}
+
+#news a {
+    text-decoration: none;
+    color: rgb(46, 46, 231);
+}
+
+#news a:hover {
+    color: rgb(7, 5, 107);
+}
+
+
+/* winxin */
+
+.w {
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: none;
+    position: absolute;
+    margin-left: 20px;
+    z-index: 100;
+}
+
+#wixin1 {
+    left: 24%;
+    top: 1800px
+}
+
+#wibo1 {
+    left: 28%;
+    top: 1800px
+}
+
+#in1 {
+    left: 33%;
+    top: 1800px
+}
+
+#winxin {
+    background: #F1F1F1;
+    width: 100%;
+    height: 66px;
+    position: relative;
+}
+
+.winxin_in {
+    width: 940px;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.winxin_in p {
+    font-size: 14px;
+    line-height: 66px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 20px;
+    display: block;
+    float: left;
+    position: absolute;
+    left: 120px;
+}
+
+.winxin_in img {
+    margin: 20px 20px;
+    display: inline;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 20px;
+    background: #b4b2b2;
+}
+
+.fContent {
+    padding-bottom: 20px;
+    width: 83%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    height: 230px;
+    ;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+
+.li1 {
+    float: left;
+    margin-right: 75px;
+}
+
+.ul2 li {
+    margin-top: 30px;
+}
+
+.ul1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.rLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.rRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#rrul {
+    margin: 20px 30px;
+}
+
+#a {
+    margin-left: 200px;
+}
+
+.rrli {
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.botom {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom li {
+    float: left;
+    margin-top: 15px;
+}
+
+.b {
+    margin: 10px 55px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.aaa {
+    width: 55px;
+    height: 200px;
+    z-index: 50;
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+}
+
+.aa {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.a_1 {
+    background: url("./images/go-top-icon.png") no-repeat;
+}
+
+.a_2 {
+    background: url("./images/icon.png") no-repeat;
+    background-position-y: -130px;
+}
+
+.a_3 {
+    background: url("./images/icon.png") no-repeat;
+    background-position-y: -250px;
+}
+
+.bb {
+    position: absolute;
+}
